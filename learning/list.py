@@ -57,4 +57,45 @@ print(list(range(5)))
 
 #***********
 
+#to delete elemement from list another way i.e by assigning empty list to slice
+
+##my_list[2:5] = []
+
+#List Comprehension: Elegant way to create new List
+
+#####pow2 = [2 ** x for x in range(10)]
+# Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+
+#This code is equivalent to
+
+pow2 = []
+for x in range(10):
+   pow2.append(2 ** x)
+print(pow2)
+
+
+my_list = ['p','r','o','b','l','e','m']
+
+# Output: True
+print('p' in my_list)
+
+# Output: False
+print('a' in my_list)
+
+# Output: True
+print('c' not in my_list)
+
+########## implement list as queue better use dequeu as insertion in  beginging is slow in list
+
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")           # Terry arrives
+queue.append("Graham")          # Graham arrives
+queue.popleft()                 # The first to arrive now leaves
+
+queue.popleft()                 # The second to arrive now leaves
+
+print(queue)                         # Remaining queue in order of arrival
+
+##############################
 

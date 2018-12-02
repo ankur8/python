@@ -33,7 +33,7 @@ print('  1,2,,3 '.split(',',4))
 print(' 1 2 3 '.split())
 name='ankur'
 print(f'he is my {name}')
-print('{:_<15}'.format(name),'new','{:<15}'.format('test'))
+print('{:_<15}'.format(name),'new','{:<15}'.format('test1'))
 print(name.find("an"))  #find string in str return index else -1
 
 person = {'first': 'Jean-Luc', 'last': 'Picard'}  #dictionary
